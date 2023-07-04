@@ -9,7 +9,7 @@ model = tf.keras.models.load_model('model.h5')
 
 class FeatureExtractor:
     def __init__(self):
-        self.model = Model(inputs=(model.input), outputs=model.get_layer('fc1').output)
+        self.model = Model(inputs=(model.input), outputs=model.get_layer('predictions').output)
 
     def extract(self,img):
         """
