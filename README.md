@@ -26,6 +26,8 @@ for img_path in tqdm(sorted(Path("./images").glob("*.jpg"))):
 ```
 
 ## Extract feature (new model with pytorch)
+
+Download [model](https://drive.google.com/file/d/1Sk71Avnl-PZ5RIWPJGsnUyTD7QgXiKV5/view?usp=sharing).
 ```python
 import pandas as pd
 import torch
